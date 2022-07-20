@@ -1,0 +1,676 @@
+*{
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
+
+    
+   
+}
+
+/* header start */
+
+header {
+    width: 100%;
+    background-color: rgba(23, 23, 23, 0.15);
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    text-decoration: none;
+    
+
+    
+}
+
+
+header .container{
+    
+    display: flex;
+    justify-content: space-between;
+
+    
+    
+
+}
+.container h1{
+    height: 1rem;
+    text-decoration: none;
+    margin-top: -1rem;
+    margin-right: -27rem;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1.3px;
+    color: rgba(255, 255, 255, 0.719);
+    transition: 0.4s ease-in-out;
+}
+
+h1 span{
+    color: #f10606;
+    text-overflow: ellipsis;
+   
+    font-family: 'Poppins', sans-serif;
+    
+}
+.container B{
+    font-size: x-large;
+    font-weight: 700;
+    
+}
+.home a{
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+    background-color: none;
+    border-radius: -9rem;
+}
+
+.nav ul{
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: -2px;
+    margin-top: -16px;
+    margin-bottom: -19px;
+
+}
+.nav ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+.nav ul li a{
+    color: white;
+    display: block;
+    padding: 0 15px;
+    text-decoration: none;
+    line-height: 60px;
+font-size: 20px;
+transition: 2s;
+}
+.nav .only-trans{
+    transition: 10;
+}
+.nav ul li a:hover{
+color: red;
+transform: (1.1);
+}
+.nav ul ul{
+
+    position: absolute;
+    top: 60px;
+    display: none;
+    margin-bottom: 30px;
+}
+.nav ul ul li{
+    background: rgba(0, 0, 0, 0.219);
+    border: 2px solid black;
+    border-radius: 12px;
+    
+}
+.nav ul li:hover > ul{
+    display: block;
+}
+.burger-menu{
+display: none;
+}
+.line{
+    width: 2rem;
+    height: .3rem;
+    background: white;
+    margin: .3rem 0;
+    border-radius: 5px;
+    display: flex;
+    cursor: pointer;
+}
+
+
+
+/* header end */
+/* banner sections */
+.banner-container{
+width: 100%;
+height: 100vh;
+background-image: url("./images/bible-biblia-book-book-bindings.jpg ");
+background-repeat: no-repeat;
+background-attachment:fixed;
+background-position: center;
+background-size:cover ;
+display: flex;
+box-shadow: inset 2000px 0 16px rgb(0,0,0,0.3);
+}
+.banner-container .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    
+}
+/* banner end */
+/* left section start */
+.left-section{
+    width: 700px;
+    margin-right: 450px;
+}
+.left-section h2{
+margin: 0;
+font-size: 40px;
+color: white;
+
+}
+.left-section p{
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.884);
+    margin-top: 18px;
+    line-height: 25px;
+}
+.left-section button{
+    position: relative;
+    font-size: 13px;
+
+    color: var(--primary-color);
+    background-color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px 50px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: width 60s;
+    border-radius: 1s;
+    margin-top: 6px;
+}
+.join-button:focus{
+background-color: #7c8588d6;
+border-radius:  60%;
+}
+/* left section end */
+/* right section start */
+.right-section{
+width: 400px;
+background-color: white;
+border-radius: 15px;
+padding: 45px;
+box-shadow: 0.5px 6px rgba(0, 0, 0, 0.219);
+}
+.right-section h4 {
+font-size: 20px;
+width: 300px;
+margin: auto;
+margin-bottom: 30px;
+color: rgb(118, 107, 107);
+}
+.input-group {
+    width: 300px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+.input-group label{
+    color: rgb(165, 165, 165);
+}
+/* right section end */
+/* card section started */
+.card-container{
+    width: 100%;
+     justify-content: center;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    
+}
+.card-section-header{
+    text-align: center;
+
+}
+.card-container .card{
+    width: 14rem;
+    margin: 1rem 4rem;
+background:rgb(233, 223, 223);
+display: flex;
+flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: right 4rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 16px rgba(223, 21, 21, 0.683);
+    border-radius: 15px;
+    transition: 3s;
+
+    
+ }
+
+.card{
+   
+    height: 20rem;
+    padding:20px;
+    padding-bottom: 80rem;
+    padding-top: 70px;
+
+}
+.card:hover{
+    transform: scale(1.2);
+    background: rgba(0, 0, 0, 0.219);
+    text-overflow: ellipsis;
+ box-shadow: 0 5px 15px 0 rgb(13, 13, 24);
+    z-index: 2;
+  
+ 
+}
+.card h6 {
+    font-size: 163%;
+    margin-top: -3%;
+  }
+.card p{
+    font-size: 0.8rem;
+}
+.card-image{
+    width: 6rem;
+    height: fit-content;
+    padding: auto;
+}
+
+.card-container a{
+    color: none;
+    padding: bottom 50px;
+    text-decoration: none;
+ 
+}
+footer{
+    width: 100%;
+    margin-top: 7rem;
+    position: absolute;
+    color: white;
+    background: gray;
+  border-top-left-radius:240px;
+    font-size: 13px;
+    line-height: 20px;
+    padding-bottom: -30rem;
+  
+
+}
+.about-us{
+    padding-bottom: 0rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+.about-us h1{
+    padding-bottom: -1rem;
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+
+}
+.about-us p {
+    max-width: 561px;
+    margin: 14px;
+    line-height: 28px;
+    font-size: 16px;
+    color: #cacdd2;
+  }
+.about-us ul{
+    display: flex;
+}
+
+.about-us ul li{
+    position: relative;
+    display: block;
+    color: #666;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    padding-top: 10px;
+    background: #171515;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+    
+}
+
+
+.about-us ul li:hover:before{
+    transform: scale(4.3);
+}
+
+/* card section ended */
+
+/* 1 sem meterails start*/
+.materials-container{
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+  
+}
+.banner-land{
+    margin-top: 59px;
+    background-image: url("images/logoweb.jpeg");
+    background-repeat: no-repeat;
+    
+background-position: center;
+background-size:cover ;
+display: grid;
+
+}
+
+embed:hover{
+    transform: scale(1.1);
+    background: rgba(0, 0, 0, 0.219);
+    text-overflow: ellipsis;
+    box-shadow: 2px 2px 2px rgb(244, 244, 255);
+
+
+}
+.pdf-whole embed{
+    transition: 2s;
+    width: 18rem;
+    margin: 1rem 4rem;
+    align-items: center;
+    text-align: center;
+
+    padding: 1rem;
+}
+
+
+h6{
+    font-size: xx-large;
+    font-weight: 800;
+   margin-bottom: 1rem; 
+    margin-left: .5rem;
+   
+}
+.syllabus-pdf{
+    width:  289.5px;
+    height: 16rem;
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 35px;
+    
+   
+    
+}
+
+.content1-pdf{
+    width:  289.5px;
+    height: 16rem;
+    margin-left: 20px;
+    border: 4px solid black;
+    border-radius: 35px;
+   
+}
+.content2-pdf{
+    width:  289.5px;
+    height: 16rem;
+    margin-left: 20px;
+    border: 4px solid black;
+    border-radius: 35px;
+   
+}
+.content3-pdf{
+    width:  289.5px;
+    height: 16rem;
+    margin-left: 20px;
+    border: 4px solid black;
+    border-radius: 35px;
+   
+}.content4-pdf{
+    width: 289.5px;
+    height: 16rem;
+    margin-left: 20px;
+    border: 4px solid black;
+    border-radius: 35px;
+   
+}.content5-pdf{
+    width:  289.5px;
+    height: 16rem;
+    margin-left: 20px;
+    border: 4px solid black;
+    border-radius: 35px;
+   
+}
+.content6-pdf{
+    width:  289.5px;
+    height: 16rem;
+    margin-left: 20px;
+    border: 4px solid black;
+    border-radius: 35px;
+   
+}
+.content7-pdf{
+    width:  289.5px;
+    height: 16rem;
+    margin-left: 20px;
+    border: 4px solid black;
+    border-radius: 35px;
+   
+}
+.content8-pdf{
+    width: 289.5px;
+    height: 16rem;
+    margin-left: 20px;
+    border: 4px solid black;
+    border-radius: 35px;
+   
+}
+/* 1 sem meterials ended */
+
+
+/* 1 sem bit section started */
+.bit-section-container{
+    width: 100%;
+   background-image: url(images/logoweb.jpeg);
+}
+
+.bit-section-header{
+    color: aliceblue;
+    text-align: center;
+    font-size: 215%;
+    margin-top: 21px;
+    font-weight: 900;
+    
+}
+embed:hover{
+    transform: scale(1.1);
+    background: rgba(0, 0, 0, 0.219);
+    text-overflow: ellipsis;
+    box-shadow: 2px 2px 2px rgb(238, 237, 237);
+}
+
+.mb-content-1{
+    width:  289.5px;
+    height: 16rem;
+    margin-left: 20px;
+    border: 4px solid black;
+    border-radius: 35px;
+   
+}
+.mb-content-2{
+    width:  289.5px;
+    height: 16rem;
+    margin-left: 20px;
+    border: 4px solid black;
+    border-radius: 35px;
+   
+}
+.mb-content-3{
+    width:  289.5px;
+    height: 16rem;
+    margin-left: 20px;
+    border: 4px solid black;
+    border-radius: 35px;
+    
+   
+}
+
+
+/* media query started */
+
+@media only screen and (max-width: 1060px){
+.burger-menu{
+    display: block;
+    cursor: pointer;
+
+}
+.nav{
+    display: none;
+}
+.nav ul{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    
+    background: rgba(0, 0, 0, 0.925);
+    transform: translateY(100%);
+    width: 88%;
+    left: 50%;
+    top: -295%;
+    transform: translate(-50%,100%);
+    padding: 6px;
+    border-radius: 25px;
+    animation: fade .8s ease-in-out;
+
+}
+.nav--active{
+    display: flex;
+}
+.nav ul li{
+    text-align: center;
+    margin: .4px 0;
+}
+.nav ul ul li{
+    display: none;
+}
+
+
+.container B{
+    font-weight: 700;
+    font-size: 17px;
+    justify-content: space-between;
+}
+.container h1{
+    font-size:  11px;
+}
+.left-section{
+
+    margin-right: 3rem;
+    align-items: flex-end;
+}
+.left-section h2{
+    font-size: 14px;
+    align-content: space-between;
+   
+}
+.left-section p{
+    font-size: 0.7rem;
+}
+.left-section button{
+    font-size: 0.6rem;
+    margin-top: 3.5rem;
+}
+.header{
+    padding: 0 1rem;
+   
+}
+}
+@media only screen and (max-width:1090px) {
+.card-container .card{
+    width: 12rem;
+}
+.card{
+    height: 18rem;
+}
+}
+@media only screen and (max-width:576px){
+    .card-container .card{
+        width: 10rem;
+    }
+    .card{
+        height: 15rem;
+    }
+    .card h6 {
+        font-size: 20px;
+    }
+    .card-image{
+        width: 45px;
+        
+    }
+    .card-section-header{
+        margin: 1rem;
+        margin-bottom: 11px;
+    }
+}
+@media only screen and (max-width:450px) {
+    .left-section h2{
+        padding-left: 13px;
+        font-size: 23px;
+    }
+    .left-section p{
+       padding-left: 10.5px;
+       font-size: 12.5px;
+    }
+    footer{
+        width: 100%;
+        height: 434px;
+        margin-top: 40px;
+        border-top-left-radius: 0px;
+
+        
+      
+    }
+    .about-us {
+        height: 20rem;
+  padding-bottom: 0rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 0rem;
+  padding-top: 5rem;
+
+}
+.about-us h1{
+    font-size: 27px;
+}
+.about-us p{
+    font-size: 12px;
+}
+.about-us ul{
+    padding-right: 41px;
+}
+.about-us ul li{
+    position: relative;
+    display: block;
+    height: 45px;
+    width: 45px;
+    font-size: 22px;
+    line-height: 25px;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+}
